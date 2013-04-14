@@ -2,4 +2,4 @@ blog
 ====
 
 BLOG
-http://identalk.github.com/blog
+http://sola-lufkin.github.io/blog/
