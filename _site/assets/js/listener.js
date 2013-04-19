@@ -6,11 +6,13 @@ $(document).ready(function() {
  //  				console.log( "success" );
 	// 	})
 		$.ajax({
-		    // type: "GET",
-		    url: "https://api.weibo.com/2/statuses/mentions.json?filter_by_type=0&access_token=2.00I28PyBlvrPeC4f0f439b1aioR6GD",
-		    // dataType: "jsonp"
-		    success: function(){
-						console.log( "success" );
+		    type: "GET",
+		    url: "https://api.weibo.com/2/statuses/mentions.json?access_token=2.00I28PyBlvrPeC4f0f439b1aioR6GD",
+		    dataType: "jsonp",
+		    data: {},
+		    success: function(data){
+
+						console.log( data );
 					}
 		})
 });
