@@ -1,0 +1,64 @@
+
+lastid = 3570921833385620;
+console.log(lastid);
+
+var showmentions = function(){
+		
+
+	$.globalMessenger()["do"]({
+	  errorMessage: "This did not go well."
+	}, {
+	  url: "https://api.weibo.com/2/statuses/mentions.json?access_token=2.00I28PyBlvrPeC4f0f439b1aioR6GD",
+	  type: "GET",
+	  dataType: "jsonp",
+	  data: {
+	    "since_id":lastid,
+	    "count":199
+	  },
+	  success: function(data) {
+	  		console.log( data );
+	    	var mentions = data.data.statuses;
+	        console.log(mentions);
+	    	console.log(mentions.length);
+	    
+	    	if(mentions.length>0)
+	        {
+	    
+	          for(var i=mentions.length-1; i>=0; i--)
+	          {
+	                var mention = mentions[i];
+	                $.globalMessenger(mention).post({
+	                        message: mention.text,
+	                        showCloseButton: true
+	                      });
+
+	          } 
+	    	
+	          lastid = mentions[0].id
+	          console.log(lastid)
+	        }
+	    	else
+	        {
+	        	//$.globalMessenger().post({
+                //            message: "No New Msg",
+                //            showCloseButton: true
+                //          });
+                console.log("No New Msg!!")
+	        }
+	    
+	  }
+	});
+}
+
+
+var message = function(){
+  		var _time = 30000;
+            
+        setInterval(function(){
+          
+				showmentions();
+          
+			},_time);
+}
+
+message();			

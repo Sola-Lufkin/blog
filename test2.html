@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Less is more - sola's blog
-js: listener.js
 ---
-
- <!-- <script type="text/javascript" src="https://api.weibo.com/2/statuses/mentions.json?filter_by_type=0&access_token=2.00I28PyBlvrPeC4f0f439b1aioR6GD"></script>
-//  -->
-
-<!-- // <div id="wb_connect_btn"></div> -->
+  <script type="text/javascript">
+	function weiboData(data){
+       console.log( data.data.statuses );
+    }
+  </script>
+<script type="text/javascript" src="https://api.weibo.com/2/statuses/mentions.json?callback=weiboData&filter_by_type=0&access_token=2.00I28PyBlvrPeC4f0f439b1aioR6GD"></script>

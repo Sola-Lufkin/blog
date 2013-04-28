@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="/blog/assets/css/style.css"/>
     <link rel="stylesheet" href="/blog/assets/css/homepage.css"/>
     
-    
+    <script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2427101337" type="text/javascript" charset="utf-8"></script>
+
     <script src="/blog/assets/js/vendor/custom.modernizr.js"></script>
     <script src="/blog/assets/js/vendor/zepto.js"></script>
     <script src="/blog/assets/js/vendor/jquery.js"></script>
     <script src="/blog/assets/js/foundation.min.js"></script>
-       
-    <script src="/blog/assets/js/listener.js"></script>
+    <script src="/blog/assets/js/vendor/jquery.tmpl.min.js"></script>
     
 		
 	</head>
@@ -47,10 +47,13 @@
       </div> -->
     </div>
 </nav>
-             <!-- <script type="text/javascript" src="https://api.weibo.com/2/statuses/mentions.json?filter_by_type=0&access_token=2.00I28PyBlvrPeC4f0f439b1aioR6GD"></script>
-//  -->
-
-<!-- // <div id="wb_connect_btn"></div> -->	               			      
+              <script type="text/javascript">
+	function weiboData(data){
+       console.log( data.data.statuses );
+    }
+  </script>
+<script type="text/javascript" src="https://api.weibo.com/2/statuses/mentions.json?callback=weiboData&filter_by_type=0&access_token=2.00I28PyBlvrPeC4f0f439b1aioR6GD"></script>
+	               			      
         <!-- <div class="footer">
         </div> -->
 	</body>

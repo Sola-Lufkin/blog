@@ -18,14 +18,19 @@ js: blog.js
                 </div> -->
                 <div class="bio">
                     <h3 style="color:#fff">Sola Lufkin</h3>
-                    <p class="darker">Product Designer,Kicksend</p>
-                    <p class="hideMobile">I'm an interaction designer living in Silicon Valley, working at Kicksend. I love creating clean and understandable user interfaces for web and mobile products. Creator of Startups, this is how design works and Retina Mac Apps.</p>
+                    <p class="darker">Product Designer,iDentalk</p>
+                    <p class="hideMobile">Hey here, I'm a sola. I'm working at <a href="http://www.identalk.com">iDentalk</a> in ChengDu,China. I used to be a pythoner, I and my two teammates setup iDentalk which provided service between dentists & their patients .Now I try to make my way to the Design world gradually. I'm always having a crush on design, especially the web front-end design.I will try my best to make my  works amazing enough.</p>
                 </div>
             </div>
         </div>
         <div class="large-9 columns blog-content">
             <h3>{{ page.title }}</h3>
-            <h4>Authored by {{ page.author }} <a id="switch" style="padding-left:490px;cursor:pointer;">switch language</a></h4>
+            {% if page.originalurl %}
+                <h4>Translated by {{ page.author }} &nbsp;&nbsp;|&nbsp;&nbsp; <a href="{{page.originalurl}}">ORIGINAL</a> <a id="switch" style="padding-left:400px;cursor:pointer;">switch language</a></h4>
+            {% else %}
+                <h4>Authored by {{ page.author }}</h4>
+                
+            {% endif %}
 		    {{ content }}
         </div>
     </div>
@@ -66,6 +71,6 @@ js: blog.js
         </div>
     </div>
     <div class="footer">
-        © 2012–2013
+       Sola Lufkin © 2012–2013
     </div>
 </div>

@@ -1,0 +1,38 @@
+.blocks{
+	height: 443px;
+}
+
+.bubbler{
+	position:absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #CBAD86;
+	-webkit-border-radius:500px;
+	-moz-border-radius:500px;
+	border-radius:500px;
+	font-size: 10px;
+	color: #FFF;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-top: 20px;
+	line-height: 17px;
+
+}
+
+.user img{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	-webkit-border-radius:500px;
+	-moz-border-radius:500px;
+	border-radius:500px;
+	margin: 27px 0 0 -14px;
+	border:2px solid #FFFFFF;
+}
+
+.bubs{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}

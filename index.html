@@ -37,14 +37,18 @@ title: Less is more - sola's blog
             <div class="large-11 columns list-title">
                 <a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a>
                 <ul class="author">
-                  <ul>Authored by {{ post.author }}</ul>
+                {% if post.originalurl %}
+                  <ul>Translated by {{ post.author }}</ul>
+                {% else %}
+                  <ul>Authored by {{ post.author }}</ul>                    
+                {% endif %}
                 </ul>
             </div>
         </div>
         {% endfor %}
     </div>
     <div class="blog-footer ml-15">
-        © 2012–2013 
+        Sola Lufkin © 2012–2013 
     </div>
     <!-- Content List -->
 </div> 

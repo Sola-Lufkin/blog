@@ -1,0 +1,35 @@
+---
+layout: default
+title: Less is more - sola's blog
+js: listener.js
+css: bubbler.css
+---
+
+
+<script id="mentions" type="text/x-jquery-tmpl">
+    {{each data}}
+    	<div class="bubbler">${text}</div>
+    {{/each}}
+</script>
+
+<script id="singlemention" type="text/x-jquery-tmpl">
+    
+    	<div class="bubbler">
+	    	<div class="inner">
+	    		<div class="user-title">${user.name}</div>
+	    		<div class="content"></div>
+	    		<div class="user"><img src="${user.profile_image_url}" ></div>
+	    	</div>
+	    	
+    	</div>
+    
+</script>
+
+<audio id="player" src="http://www.test.com:4000/blog/assets/music/biu3.mp3"></audio>
+
+<!-- here to show the bubbler list -->
+
+<div id="timeline" class="blocks">
+	<!-- Container of bubs -->
+	<div id="mentionsdiv" class="bubs"></div>
+</div>

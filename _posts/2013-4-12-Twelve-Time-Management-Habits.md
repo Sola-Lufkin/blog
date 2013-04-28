@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Twelve Time Management Habits
+originalurl: http://www.forbes.com/sites/patbrans/2013/01/01/twelve-time-management-habits-to-master-in-2013/
 author: Sola
 category: life
 yearmonth: 201304
@@ -49,6 +50,10 @@ yearmonth: 201304
 <p><strong>Habit 11</strong>: Break your goals into small units of work, and think only about one unit at a time. Spend most of your time working on the task in front of you, and avoid dreaming too much about the big goal.</p>
 
 <p><strong>Habit 12</strong>: Finish what’s important and stop doing what’s no longer worthwhile. Don’t stop doing what you considered worth starting unless there’s a good reason to give it up.</p>
+
+<hr>
+<p><strong>P.S</strong>: Special thanks to My Best Friend <a href="https://www.facebook.com/chen.chen.376258">Chēn Chén</a> who give me much help during my translation. :) </p>
+
 </div>
 
 
@@ -97,5 +102,7 @@ yearmonth: 201304
 
 <p><strong>习惯12</strong>：去完成那些重要的事情，停止继续做那些不再值得的事情。不要轻易放弃你最初觉得值得去做的事情，除非你有一个充分的理由。</p>
 
+<hr>
+<p><strong>P.S</strong>: 終極感謝我的好朋友 <a href="https://www.facebook.com/chen.chen.376258">Chēn Chén</a>，在翻譯過程中給予我的莫大幫助. :) </p>
 </div>
 

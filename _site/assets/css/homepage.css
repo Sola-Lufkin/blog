@@ -85,6 +85,11 @@
     margin-top: -60px;
 }
 
+.bio a{
+    color: #9cbd7f;
+    text-decoration: underline;
+}
+
 .border-green{
     /*border-left: 4px solid #7cc576;*/
     /*border-right: 4px solid #7cc576;*/
