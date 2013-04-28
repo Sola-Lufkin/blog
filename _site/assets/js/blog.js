@@ -16,7 +16,7 @@ $(document).ready(
 			// }
 			  
 			// });
-
+			document.getElementById('player').play();
 	        $(".blog-main-content:visible").fadeOut("normal");
 	        $(".blog-main-content:hidden").fadeIn("slow");
 
