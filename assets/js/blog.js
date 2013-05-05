@@ -2,6 +2,7 @@ $(document).ready(
     function()
     {
 
+		// $(".bio-wrap").pin()
 		$('#switch').click(function() {
 			// var a = $('#english').attr('display');
 			// alert(a);		
