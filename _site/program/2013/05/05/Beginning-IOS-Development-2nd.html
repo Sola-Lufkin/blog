@@ -66,7 +66,7 @@
                 <div class="bio">
                     <h3 style="color:#fff">Sola Lufkin</h3>
                     <p class="darker">Product Designer,iDentalk</p>
-                    <p class="hideMobile">Hey here, I'm a sola. I'm working at <a href="http://www.identalk.com">iDentalk</a> in ChengDu,China. I used to be a pythoner, I and my two teammates setup iDentalk which provided service between dentists & their patients .Now I try to make my way to the Design world gradually. I'm always having a crush on design, especially the web front-end design.I will try my best to make my  works amazing enough.</p>
+                    <p class="hideMobile">Hey there, I'm a sola. I'm working at <a href="http://www.identalk.com">iDentalk</a> in ChengDu,China. I used to be a pythoner, I and my two teammates setup iDentalk which provided service between dentists & their patients .Now I try to make my way to the Design world gradually. I'm always having a crush on design, especially the web front-end design.I will try my best to make my  works amazing enough.</p>
                 </div>
             </div>
         </div>
@@ -174,7 +174,66 @@
        Sola Lufkin © 2012–2013
     </div>
 </div>
-	               			      
+
+
+<script type="text/javascript">
+    
+    // On window load. This waits until images have loaded which is essential
+    $(window).load(function(){
+        
+        // Fade in images so there isn't a color "pop" document load and then on window load
+        $(".post-img").fadeIn(500);
+        
+        // clone image
+        $('.post-img').each(function(){
+            var el = $(this);
+            el.css({"position":"absolute"}).wrap("<div class='img_wrapper' style='display: inline-block'>").clone().addClass('img_grayscale').css({"position":"absolute","z-index":"998","opacity":"0"}).insertBefore(el).queue(function(){
+                var el = $(this);
+                var W = parseFloat(this.width);
+                var H = parseFloat(this.height);
+                var re_w = parseFloat(this.style.width);
+                var re_h = re_w/W*H;
+                // el.parent().css({"width":this.width,"height":this.height});
+                el.parent().css({"width":this.style.width,"height":re_h});
+                el.dequeue();
+            });
+            this.src = grayscale(this.src);
+        });
+        
+        // Fade image 
+        $('.post-img').mouseover(function(){
+            $(this).parent().find('img:first').stop().animate({opacity:1}, 1000);
+        })
+        $('.img_grayscale').mouseout(function(){
+            $(this).stop().animate({opacity:0}, 1000);
+        });     
+    });
+    
+    // Grayscale w canvas method
+    function grayscale(src){
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        var imgObj = new Image();
+        imgObj.src = src;
+        canvas.width = imgObj.width;
+        canvas.height = imgObj.height; 
+        ctx.drawImage(imgObj, 0, 0); 
+        var imgPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        for(var y = 0; y < imgPixels.height; y++){
+            for(var x = 0; x < imgPixels.width; x++){
+                var i = (y * 4) * imgPixels.width + x * 4;
+                var avg = (imgPixels.data[i] + imgPixels.data[i + 1] + imgPixels.data[i + 2]) / 3;
+                imgPixels.data[i] = avg; 
+                imgPixels.data[i + 1] = avg; 
+                imgPixels.data[i + 2] = avg;
+            }
+        }
+        ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
+        return canvas.toDataURL();
+    }
+        
+</script>
+</div>	               			      
         <!-- <div class="footer">
         </div> -->
 	</body>

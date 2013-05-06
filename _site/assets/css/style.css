@@ -166,8 +166,9 @@ a.link:hover{
 	/*border-left: 4px solid #7cc576;
 	display: block;
 	padding-left: 20px;
-	position: relative;
-	margin-bottom: 20px;*/
+	position: relative;*/
+	margin-top: -6px;
+	margin-bottom: 5px;
 }
 
 /*.post-img:after{
