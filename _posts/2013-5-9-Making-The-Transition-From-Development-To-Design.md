@@ -1,0 +1,159 @@
+---
+layout: post
+title: Making the Transition from Development to Design
+originalurl: http://somerandomdude.com/2012/01/10/transition-from-development-to-design/
+author: Sola
+category: design
+yearmonth: 201305
+---
+<div id="english" class="blog-main-content" style="display:block;">
+<p>A couple months ago, a person emailed me asking for tips for transitioning to design from a development background. As someone who had loosely gone through the same path (from programming to design to programming then back to design), I wanted to share any advice I could possibly give. After writing the letter, I thought it may be useful to a few other people out there. So if you are a developer looking to get into design, this is written specifically for you. To preface, this article is not why developers can be good designers. <a href="http://method.ac/blog/design/programmers-designers.html">This article </a>does a great job of articulating those ideas. So instead of duplicating good work, I spent time on some ways a developer can get into design.</p>
+
+<p>Before I get into the meat of this response, I highly recommend you start your transition in the software design world (e.g., web apps, mobile apps, traditional software, etc.). If that is not the case, I highly recommend you reconsider, at least in the short term. I hold the belief that software design is going to be changing a lot in the next 5 years, and those changes are going to greatly benefit people with development and design skills. I think the future designer is going to look and act a lot more like a <a href="http://adaptivepath.com/ideas/what-makes-a-design-technologist">design technologist</a>. So don’t look at your current position as a disadvantage, view it as a great starting point towards a complementary vocation.</p>
+
+<p>I tried to put together a list of tips that would have been helpful to know when I first got started. The design technologist role was still taking shape when entered the professional sector and a lot of my own progression was from muddling around in the dark. To be honest, I don’t think I would change that even if I had the opportunity to do so. So, while I believe these tips could be helpful, there is something to be said about just getting yourself lost with the faith that you will find your way out and learn something in the process. If there is one thing to take away from this email, it is to refrain from mentally separating design and development. When you are creating wireframes, you are implying code that needs to be written. When you are coding, you are actualizing user experiences. To mentally separate each process is the first step towards viewing the creation of software as an assembly-line process. We have a lot of horrendous software due to that line of thinking.</p>
+
+<p>Remember, these are tips based on my personal philosophy and things that have shaped my approach. A lot of the thoughts below are opinions that a lot of other designers may disagree with. That’s what makes this topic so interesting.</p>
+
+<h5>Tip #1: Don’t stop building things</h5>
+
+<p>It will not be long before anyone designing software will require an understanding of how to make software. I have been saying this for nearly half a decade and it is finally starting to play out. Developers interested in design do not realize their development background is their greatest asset. Designers will be desperately working to have the skills you already have.</p>
+
+<p>It is important to keep your development skills honed. If your goal is to shift your emphasis towards design, your day-to-day development tasks may change but they can still be used. The most obvious area where they can be used productively is prototyping. As interaction design becomes increasingly complex, prototypes will become a greater necessity. Your coding background will allow you to make more sophisticated, accurate and (hopefully) insightful prototypes. Ultimately, the real goal is to see no difference between your development and design skills. The skills gained from each focus are connected, interdependent and equally important towards making good software.</p>
+
+<h5>Tip #2: Learn design in order of dependency</h5>
+
+<p>Trying to tackle the entire universe of design at once will set you up for failure. I highly suggest easing into the process. A great way to do this is to start at what is most vital for software (its function) to what makes it delightful to use (its form). A worthwhile read on this subject <a href="http://www.smashingmagazine.com/2010/04/26/designing-for-a-hierarchy-of-needs/">can be found here</a>. I decided to modify the author’s hierarchy a bit for our case (if you’ve looked at the diagram from the link provided, the list below starts at the bottom and moves up):</p>
+
+<img class="post-img" src="{{ site.baseurl }}/assets/img/blog/3-1.png" style="width:700px;">
+
+<p>These steps gradate from the rational to the emotional. Learning design by progressing through these steps is optimal for two reasons. The first reason is that each tier is dependent on its predecessor—for instance, learning visual design without a strong understanding of interaction design will lead to poor output. The second reason is that this transition gradually moves you from pure logical, quantitative thinking to more qualitative, aesthetic thinking.</p>
+
+<p>The first two steps (design for reliability and design for performance) will probably be areas you’re familiar with. However, it is important to understand how much design can impact the reliability and performance of software. Designing for organization is all about information architecture and content hierarchy. Designing for order and structure relates to traditional interface design (which is traditionally represented with wireframes). Designing for interaction, determines the details of how a human being actually uses software (translating a static interface into a rich interactive experience). Designing for aesthetics is obviously visual/motion design. There are ample material for each of these areas which will be easy enough to find—this article is not about detailing every step, it’s about explaining the progression of learning.</p>
+
+<p>There is another step which does not exist on the pyramid, and it is arguably the most important. The last step is to learn to use all the skills concurrently. The end goal is to not treat these facets of design as separate steps, but as variables in a complex equation that is accounted for throughout the entire process. While the hierarchy of design needs will continue in the order illustrated, the aggregate of all skills are used to solve each need.</p>
+
+<h5>Tip #3: Design everything you do</h5>
+
+<p>During my first internship out of college, <a href="http://www.tree-axis.com/stella/#/home">Stella Lai </a>gave me this tip and it has been the best professional advice I ever received. Try to practice this tip as literally as possible. The obvious areas are how you dress and how your house/apartment/room is organized. I would suggest not stopping there. Your emails should be written/composed clearly and beautifully. Your conversations with individuals should be designed through how you listen, how you maintain eye contact, how you respond (both spoken and unspoken). Everything you do should have a reason, no matter how small. Design requires constant practice, this is a great way to keep growing.</p>
+
+<h5>Tip #4: Care about your audience</h5>
+
+<p>The work you care about will likely turn out better than the work you don’t care about. So what happens in the case when you simply cannot get yourself to care? I advise you to put your focus on the people your work will affect as much if not more than the subject of your work itself. If you care about your audience, you’ll automatically care more about the subject. The opposite is not always the case. The more we put others (the audience) in front of ourselves, the better the results tend to be.</p>
+
+<h5>Tip #5: Talk about design and listen even more</h5>
+
+<p>Reading is great, but I have learned far more through discussions with experienced, knowledgable and trustworthy people. When you find yourself in such a situation, ask questions and listen. I want to emphasize the importance of truly listening. In the short term, it is important to absorb as much good information as you can while you are in the learning process to challenge your preconceptions and push your thinking. In the long term, it is important because listening will be a vital skill in your practice. The best designers I know are amazing listeners. You will be doing it a lot (with your colleagues, your audience, your clients, etc.), so you should be good at it.</p>
+
+<h5>Tip #6: Learn to write, then learn to speak</h5>
+
+<p>Early in your practice it will be important to absorb ideas to help you form your own philosophies and approaches. However, at some point (preferably earlier than it is comfortable for you), it will be important to start formulating those points of view to an audience. Thoughts kept in your head have the luxury of being biased, irrational or simply flawed. Communicating those thoughts to an audience and opening them up to scrutiny forces us to improve our thinking. Writing well is also essential to practicing design. I’ve done some of my best learning through writing on my blog. I would suggest blogging as the first step towards sharing your ideas.</p>
+
+<p>In the long term, I suggest trying to speak in front of an audience at least once. Some people love it, others hate it. I have spoken only a half-dozen times or so and I find the process as rewarding as I do terrifying. The skills necessary for successful speaking (e.g., compelling storytelling, brevity, connecting with the audience, etc.) will help you in your daily practice, especially client-facing interactions. Sometimes, communicating the thinking behind your work is as important as the work itself.</p>
+
+<h5>Tip #7: Focus on defining and solving problems</h5>
+
+<p>A lot of the work you see at design showcase websites are great examples of well executed decorations that lack substance. The people that can perform this type of work are countless and the skills highly commoditized. Avoid pixel-pushing at all costs – your job is to solve problems. View your work through that lens at all times. Always know what problems you are trying to solve while in the process of designing (e.g., people are having a hard time knowing where to go next in a flow, or, the current visual design does not reflect the mood of our brand). Good designers solve problems, great ones ensure they are solving the right ones. Accurately defining the problem goes a long way towards solving it.</p>
+
+<h5>Tip #8: Listen to your gut, but trust your brain</h5>
+
+<p>Trends come and go, but elegant, rational and utilitarian products never go out of style. It’s not bad to follow your instincts, but always follow up to understand why you did it in the first place. “Because it felt right” is a fine way to start a conversation, but not a good way to end one.</p>
+
+<h5>Tip #9: Be your biggest critic</h5>
+
+<p>You will never be perfect, but that shouldn’t stop you from trying. There are always areas to grow. Your work and your practice always can (and  should) be improved. When in doubt lean towards being too hard on yourself rather than too easy.</p>
+
+<h5>Tip #10: learn from the time-tested—and emulate it</h5>
+
+<p>Few things prove a design’s success better than how long it remains relevant. Look to the timeless to guide your approach. This need not be limited to software, the thinking behind designing a great chair often parallels the thinking behind designing great software. Understand how others before you have solved similar problems and try to determine why it took the shape it did. Value precedence; it carries considerable weight. Blindly echoing design trends is a great way to have a dated portfolio in a couple years.</p>
+
+<p>Focusing on digital influences to follow, the operating system is one of the most time-tested and finely tuned pieces of software in existence. Explore the nuances, understand the patterns and know them like the back of your hand. When do you use a drop down as opposed to radio boxes? Why? There are smart reasons behind most of these details and they are worthwhile to know.</p>
+
+<h5>Tip #11: Ideate romantically, create pragmatically</h5>
+
+<p>Our ideas should be bigger than reality, but our execution should be married to it. This allows us to see the grand future of a product while ensuring that it can exist to have any future at all. Both are important, but they can be detrimental if out of balance or practiced at the wrong times.</p>
+
+<h5>End:</h5>
+
+<p>The design world is in a phase of rapid change. Designers who understand and can work with code are becoming the prototype. Your transition is not going to happen overnight and a lot of your thinking will need to bend. However, I think you will be surprised by how much of your thinking will not. A lot of your shift is about understanding that you have already been creatively solving problems as a developer, and that a lot of that thinking is universal.</p>
+
+<hr>
+<p><strong>P.S</strong>: Special thanks to My Best Friend <a href="https://www.facebook.com/chen.chen.376258">Chēn Chén</a> who give me much help during my translation. :) </p>
+</div>
+
+
+
+
+<div id="chinese" class="blog-main-content" style="display:none;">
+<p>兩個月前，一個網友給我發了一封email，就如何由一名開發背景的開發人員轉型為一名設計師，向我咨詢一些意見。作為一個曾經義無反顧般同樣走上這條道路（從編程轉向設計再轉回編程然後又回到設計）的人，我願意分享出我一切的建議。在寫完回信後，我意識到這封信很可能對很多其他朋友同樣有用。所以，如果妳是一名正在準備向著設計方向轉型的開發人員，那麼這篇文章非常適合妳讀一讀。文章開始之前我要說明的是，這篇文章並不是闡述為甚麼開發人員能夠成為一名好的設計人員。這裡有一篇<a href="http://method.ac/blog/design/programmers-designers.html">文章</a>已經很好的闡述過這個問題了。所以為了避免重復闡述，我會花更多的時間向大家講述開發人員進入設計領域可以通過的途徑。</p>
+
+<p>在進入文章主題之前，首先我強烈建議你從軟件設計領域（網頁應用設計，移動應用設計，傳統軟件設計等等）開始你的設計徵程。如果你並不想的話，我還是強烈建議你再三考慮一下，至少設置一個短期時間來接觸這個領域的設計。我堅信軟件設計在未來的五年里將發生很大的改變，而這些改變對於那些既有開發技術又有設計能力的人是完全有利的。我相信在未來，設計師將會在項目中被要求扮演更多的角色，而並非只是<a href="http://adaptivepath.com/ideas/what-makes-a-design-technologist">設計技工（design technologist）</a>。所以，別把你現在的職位當作妳設計徵程上的絆腳石了，而應該視之為通往完美職業的偉大起點（So don’t look at your current position as a disadvantage, view it as a great starting point towards a complementary vocation. ）。</p>
+
+<p>當我最初開始嘗試轉型時，我曾試圖把一些受用的建議整合在一起列出一個清單來。當我進入專業的設計領域時，設計技術仍然還處於逐漸成型的過程中，那時我完全是在黑暗中頓步前行。老實講，我不認為我能改變這種狀況，即使我那時有機會這麼做。如果這封郵件中有一點要記住的話，那就是克制腦子里區分設計和開發的想法。當你在創造線框(wireframes)的時候，你就在暗示需要被編的代碼。當你在編碼的時候，你就在實行用戶體驗。把設計和開發區分開來這個想法會將妳的軟件創作完全淪為一個流水線的過程，而正是由於這種想法我們有了許多很差勁的軟件。</p>
+
+<p> 需要提醒的是，這些建議都是基於我個人的哲學和經驗（things that have shaped my approach）。下面的許多想法可能並得不到其他設計師的贊同。而正因為這樣才讓這些建議如此有趣了。</p>
+
+<h5>建議 #1: 不要停止編寫程序</h5>
+
+<p>過不了多久，軟件設計中的設計師們也將會被要求必須瞭解如何開發一款軟件。大概5年前我就一直在強調這一點了，而如今它終於慢慢開始成為現實。對設計感興趣的開發人員完全沒有意識到他們開發者的背景是他們進入設計領域的最大優勢。設計師們將會拼命學習的這些技能，你已經早就掌握了。</p>
+
+<p>所以，保持你的開發能力依舊犀利是無比重要的。如果你的目標是將自己的重點向設計轉移，那麼你日復一日的編程任務可能需要改變，但是你仍然需要去編程，去開發。開發能力在設計中最為顯著的作用體現在製作設計原型圖時。隨著交互設計變得越來越複雜，設計原型圖將會變得越來越必不可少。你的編程背景將能讓你製作出更有經驗判斷，更精准，以及更有用更富有遠見的交互原型。基本上，保持編程開發的真正目的是讓你沒有區別的去看待你的開發能力和設計能力。這些從各自領域習得技能，是相互聯繫，相互依賴的，並且對於創造出好軟件起到同樣重要的作用。</p>
+
+<h5>建議 #2: 有計劃有順序的學習設計</h5>
+
+<p>任何事都不可能一蹴而就，設計同樣如此。我強烈建議學習設計應該一步一步來。怎樣來定義這個學習的順序呢，我覺得應該從軟件最核心的部分－”功能“ 開始，向它的外表－ “形式”慢慢過渡。  關於這一點，這裡有一篇值得一讀的<a href="http://www.smashingmagazine.com/2010/04/26/designing-for-a-hierarchy-of-needs/">文章</a>。我決定對原文作者所描述的優先級做一些小小的修改 。（如果你有看到來自上面鏈接的圖，下面的表是從底端開始然後向上）</p>
+
+<img class="post-img" src="{{ site.baseurl }}/assets/img/blog/3-1.png" style="width:700px;">
+
+<p> 這個金字塔所代表的是由理性思維逐漸向感性思維轉換的過程。按照這樣的學習步驟循序漸進學習設計是最佳的方式，這裡有兩個原因可以證明這一點。第一點原因是，金字塔中的每一層都是依賴於其前一層的 —— 比如，要做好對視覺設計的掌握，如果沒有對於交互有足夠的理解是不行的。第二點原因是，在這整個過程中，妳的大腦將從純理性，邏輯的思維方式，轉變成帶有更多的感性，和審美的思維。</p>
+
+<p> 金字塔中的最初的兩個步驟（為可靠性而設計，和為性能而設計 design for reliability and design for performance）可能是作為開發者的你較為熟悉的部分。這是很重要，你需要了解到底設計對於一個軟件產品的可靠性和性能能產生多大的影響。Designing for organization is all about information architecture and content hierarchy。 Designing for order and structure 則直接與傳統的用戶界面設計相關（一般都是用線框的形勢展現的）。Designing for interaction，決定了人們实际使用軟件時的細節（將一個靜態的用戶界面變成一個具有豐富交互體驗的應用）。Designing for aesthetics  顯然是視覺和情感的設計。關於這裡的每一個部分，網路和現實中都有相當豐富的信息和資源，你可以輕鬆的找到它們，所以這裡我就不詳細的講述每一部分了，而更多的是解釋了progression of learning（学习的进程）。</p>
+
+<p> 還有另外一個步驟並沒有出現在以上的金字塔中，並且它也是同樣能夠得到論證的。這最後一步便是學習同時使用這些技能。它的最终目标不是把设计的各个方面当成不同的步骤，而是在整个过程中把它们看成一个复杂方程的变量。虽然设计需求的等级会像上图说明的顺序那样不变，把所有技能整合起来却可以用来满足每个需求。（The end goal is to not treat these facets of design as separate steps, but as variables in a complex equation that is accounted for throughout the entire process.While the hierarchy of design needs will continue in the order illustrated, the aggregate of all skills are used to solve each need.）</p>
+
+<h5>建議 #3: 在生活中無處不設計</h5>
+
+<p>  當我在大學里第一次實習時， <a href="http://www.tree-axis.com/stella/#/home">Stella Lai</a>給了我這個建議，一直以來這都是我接受到的最專業的建議。盡可能的去嘗試這麼做吧，生活中很多地方都值得妳去設計，妳的穿著，妳的房間，公寓，小屋。我要指出的不只是這些，在你撰寫email時你的行文應該整齊清晰且漂亮；你與他人的會話應該通过你聆聽的方式，眼神交流的方式，以及你回應的方式（包括語言和非語言的回應）设计。任何你做的事情都應該是有理由的，不管這件事情有多小。設計是一個長期練習的過程，這樣才能保證在練習中逐步成長。</p>
+
+<h5>建議 #4: 更多的關注設計的受眾者</h5>
+
+<p>人們在做那些自己在乎的事情時往往會比做那些並不怎麼關心的事情做得好。所以想想如果你都不在乎妳要做的事，會發生什麼？我建議你把你的注意力放在你設計的受眾者身上。如果你關注你的受众者，你自然而然的就能更多的關注到你設計的主旨。但這樣的關係反過來就不一定成立了。我們只有更多地考慮到這些用戶，我們才能設計出更好的產品。</p>
+
+<h5>建議 #5: 更多的參與到關於設計的談論中，去談論去聆聽</h5>
+
+<p>閱讀確實能讓人受益匪淺，但是我的經歷告訴我，通過和經驗成熟的人們一起談論設計讓我學習到了更多。如果你發現你正是處在这种情况中，那麼果斷去咨詢去聆聽吧。在這裡我要強調一下誠懇的聆聽有多重要。從短期來看，當你正在接收一段顛覆你以往觀念的新內容時，這時妳誠懇的聆聽便成了你吸收足夠多有用信息的關鍵，它推動你的大腦不斷思考。從長期來看，它仍然很重要因為聆听將成為你日常練習中至關重要的技能。據我所知，最優秀的設計師往往都是優秀的聆聽者。你將會在工作中越來越多的需要這麼做（當你面對你的隊友，你的用戶，以及你的客戶時）。所以，你應該擅长聆聽。</p>
+
+<h5>建議 #6: 先學寫，再学说话</h5>
+
+<p>在你早期的實踐中，你可能會覺得從你的個人哲學與處事經驗中來吸取靈感是非常重要的。但是有些時候，站在用戶的立場上審視問題確會變得非常重要。你腦中持有的那些思想都存在偏見，無理或者明顯不足等問題。與真實的用戶交流這些想法，給他們足夠的空間來審查這些想法，以便強制妳去完善它們。同時，寫作也是設計實踐中非常重要的一個部分。在我的blog上我曾經就紀錄下了很多我的學習經驗。我建議你也把紀錄blog作為你分享想法的第一步。</p>
+
+<p>從長期來看，我建議你嘗試著至少能有一次在你的用戶面前直接交流。一些人很享受這個過程，一些人卻並不這麼想。 我只這樣交流过大概六次，然后我发现这个过程非常有益(I have spoken only a half-dozen times or so and I find the process as rewarding as I do terrifying )。那些講演中的技巧（比如引人入胜的讲故事，简洁，与用户的沟通等等）能在你日常的實踐，特別是和客戶的面對面對話中起到很大的作用。有時，闡述你作品背後的思想的重要性絕不亞於你作品本身。</p>
+
+<h5>建議 #7: 專注於定義問題和解決問題</h5>
+
+<p>妳在設計類網站上看到的許多作品都是華而不實的事例。能做出這樣作品的人數不勝數，而且這些都是些高度商業化的技術。Avoid pixel-pushing at all cost -- 妳的任務是去解決問題。妳應該隨時都要从這樣的角度去看待妳的作品。妳需要清楚的知道在設計過程中妳嘗試解決的問題是什麼（舉個例子，在項目流程中，人們總是難於尋找到下一步的目標，而這時妳就應該發揮妳的作用；又或者，已經展現出來的視覺設計並不能反應出品牌的靈魂時，妳應該發現並指出這一點）。能解決實際問題的才是優秀的設計師，能保證發現並解決正確的錯誤的則是偉大的設計師。在精準定位問題上花費巨大的經歷就是為了能更好的解決問題。</p>
+
+<h5>建議 #8: 隨性而設計的同時，也要有個理性的頭腦</h5>
+
+<p>無數設計潮流來了又去，但是優雅的，理性的，实用的產品卻從來沒有過時過。跟隨著妳的直觉走並不壞，但是妳一定要清楚的知道為什麼妳這麼開始的。“因為我覺得這樣很好”，這樣說確實是能於他人開始一段會話的好辦法，but not a good way to end one。</p>
+
+<h5>建議 #9: 自己做自己最大的批評家</h5>
+
+<p>   人無完人，也沒有那個設計是完美無缺的，把自己放的過高，太過沾沾自喜與驕傲只會阻攔我們做出更好的嘗試。每一件作品，每一個人都一定還有上升的空間。妳的作品和妳的實踐总是可以（同时也应该被）改善的。当有疑惑的时候，请倾向于对自己更严格而不是更宽松（when in doubt lean towards being too hard on youself rather than too easy）。</p>
+
+<h5>建議 #10: 學習經典，效仿經典</h5>
+
+<p> 没有几样东西能比保持相关性的时间长短更好地证明一个设计的成功与否。用经典（的设计）来指导你的方法（Few things prove a design's success better than how long it remains relevant. Look to the timeless to guide your approach）。它不僅限於軟件設計里，那些傑出的椅子背後的設計理念，同樣也作用於一個傑出的軟件設計。理解前人如何解決相似的問題並嘗試著去弄明白為什麼要設計成這樣。价值的优先权是具有相当大的份量的（Value precedence；it carries considerable weight）。盲目的追尋設計潮流是会让你的作品在几年之后就过时。</p>
+
+<p>聚焦當下的數字領域里，操作系統是經歷了長時間的檢驗，並且運行地最和諧的軟件之一。研究並了解不同系統平台的細枝末節，並最終達到對它們了如指掌的程度。例如，什麼時候使用下拉框而不是radio boxes？為什麼這麼設計？，等等。大多數細節的背後都潛藏著一些偉大的智慧，它們值得妳去了解。</p>
+
+<h5>建議 #11: 用浪漫的想法，創造實用的東西</h5>
+
+<p>我們在構思時，往往都會越過現實，天馬行空，但我們在行動時卻應該以現實為基礎。這樣才能保證我們能看到一個宏大的產品展望的同時，同樣也能保證最終我們的產品能夠被順利產出並擁有這些未來。想法和行動，兩則都無比重要，但是一旦在錯誤的時候走出錯誤的一步，失去了這兩者間的平衡，那將對我們非常不利。</p>
+
+<h5>End:</h5>
+
+<p>設計的世界正在發生急速的改變。設計師越來越需要能夠理解和編寫代碼。從開發者向設計師轉變的這個過程，絕不是一蹴而就的，這裡面有許多思想需要妳去慢慢接受。然而，我认为你会对你有这么多想法其实不会变而感到吃惊。更多的卻是妳要理解這麼一件事，妳已經是一個善於解決問題的開發者了，而開發者所具備的有許多的思想同樣也是設計師應該具備的。</p>
+<hr>
+<p><strong>P.S</strong>: 終極感謝我的好朋友 <a href="https://www.facebook.com/chen.chen.376258">Chēn Chén</a>，在翻譯過程中給予我的莫大幫助. :) </p>
+</div>

@@ -135,3 +135,7 @@
     color: #333333;
     font-size: 110%;
 }
+
+.blog-main-content a{
+    text-decoration: underline;
+}
