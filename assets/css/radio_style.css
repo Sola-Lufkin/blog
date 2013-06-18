@@ -1,5 +1,7 @@
 body{
-	background: url("../img/519bf5fdc527c_Mumbai2606777.jpg") no-repeat center center fixed;
+	background: url("../img/bg2.png") no-repeat center center fixed;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	
 }
 
 h1{
@@ -60,12 +62,18 @@ h6{
 
 #header{
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 20px;
 	margin-bottom: 30px;
+}
+
+#header a{
+	color: #fff;
+	text-decoration: none;
 }
 
 #header h1{
 	color: #fff;
+	text-shadow:0 3px 1px rgba(60, 60, 60, 0.61);
 }
 
 #brief{
@@ -76,7 +84,7 @@ h6{
 }
 
 #brief p{
-	font-size:  18px;
+	font-size:  15px;
 	font-weight: normal;
 	color: rgb(189,204,222);
 	/*margin: 30px 90px;*/
@@ -84,7 +92,8 @@ h6{
 
 #latest{
 	background-color: rgba(133,160,179,0.8);
-	height: 320px;
+	/*height: 320px;*/
+	padding-bottom: 20px;
 	width: 100%;
 }
 
@@ -129,15 +138,20 @@ margin-right: 0px !important;
 	margin-top: 20px;
 }
 
-#lists .radio_info{
-	text-align: center;
+#lists .radio_info p{
 	margin-top: 30px;
 }
 
+#lists .radio_info{
+	text-align: center;
+	margin-top: 35px;
+}
+
 #latest .radio_info{
-	width: 520px;
+	/*width: 520px;*/
 	padding-top: 30px;
 	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .footer{
@@ -148,8 +162,28 @@ margin-right: 0px !important;
 	margin: 0px auto;
 	padding-top: 120px;
 	text-align: center;
+	font-size: 13px;
+}
+
+.footer a{
+	color: #fff;
 }
 
 .clear{
 	clear: both;
+}
+
+.btn{
+	background: url("../img/btn.png");
+	height: 21px;
+	width: 73px;
+	padding: 14px 44px;
+	text-shadow:0 3px 1px rgba(60, 60, 60, 0.61);
+	float: right;
+}
+
+.btn a:hover{
+	color: rgb(195,207,227);
+	text-decoration: none;
+
 }
