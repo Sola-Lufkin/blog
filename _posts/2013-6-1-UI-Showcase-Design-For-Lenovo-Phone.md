@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UI Design For Lenovo Phone
+title: Showcase - UI Design For Lenovo Phone
 originalurl:
 author: Sola
 category: design
@@ -16,7 +16,7 @@ yearmonth: 201306
 <p>該款被我名為「紅線」的設計，算是一次極端至簡的設計嘗試，在設計中我試圖將主題中所有的元素都只用單一的紅色非閉合線條來描述。在簡約并統一的同時，也力求用巧妙構思的多樣化的圖標給整個主題以清新與活力。</p>
 
 
-<p><a href="http://shijue.me/zone/show_art/5191b401e744f93ca70004a0">點擊查看原網頁</a></p>
+<p><a href="http://shijue.me/zone/show_art/5191b401e744f93ca70004a0">點擊查看我的視覺中國賬戶</a></p>
 
-<p><img class="" src="{{ site.baseurl }}/assets/img/blog/4-1.jpg" style="width:600px;"></p>
+<p><img class="" src="{{ site.baseurl }}/assets/img/blog/4-1.jpg" style="width:700px;"></p>
 </div>

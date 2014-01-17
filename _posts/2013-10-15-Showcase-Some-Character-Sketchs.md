@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Some Character Sketchs
+title: Showcase - Some Character Sketchs
 originalurl:
 author: Sola
 category: design
