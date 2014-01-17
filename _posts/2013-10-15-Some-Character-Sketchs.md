@@ -15,7 +15,7 @@ yearmonth: 201310
 <p><img class="post-img" src="{{ site.baseurl }}/assets/img/blog/5-4.jpg" style="width:700px;"></p>
 <p> —— 給我哥们儿畫的這張，算是這次我最滿意的一副了。不過她盡然抱怨我把她畫瘦了！那我下次就毫不客氣原“胖”還原好了。</p>
 <p><img class="post-img" src="{{ site.baseurl }}/assets/img/blog/5-3.jpg" style="width:700px;"></p>
-<p> —— 做了十多年同學了，盡然才發現我們怎麼如此相像，這是同“姓”基因的原因麼。</p>
+<p></p>
 <p><img class="post-img" src="{{ site.baseurl }}/assets/img/blog/5-2.jpg" style="width:700px;"></p>
 <p> —— 不得不說這個妹子的這身睡袍太有型，忍不住偷拍下來，就這麼成了速寫素材</p>
 <p><img class="post-img" src="{{ site.baseurl }}/assets/img/blog/5-1.jpg" style="width:700px;"></p>
