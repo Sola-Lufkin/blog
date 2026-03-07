@@ -3,135 +3,111 @@ layout: default
 js: blog.js
 ---
 
-<div class="container row">
-    <div class="pt70">
-        <div class="large-3 columns ">
-            <div class="bio-wrap">
-                <!-- <div>
-                    <img src="{{ site.baseurl }}/assets/img/intro-img.png">
-                </div> -->
-                <img class="avatar" src="{{ site.baseurl }}/assets/img/sola.jpg">
-                <!-- <div class="row">
-                    <div class="large-5 large-offset-7 columns">
-                        <img class="avatar ml20" src="{{ site.baseurl }}/assets/img/sola.png">
-                    </div>
-                </div> -->
-                <div class="bio">
-                    <h3 style="color:#fff">Sola Lufkin</h3>
-                    <p class="darker">Product Designer,iDentalk</p>
-                    <p class="hideMobile">Hey there, I'm a sola. I'm working at <a href="http://www.identalk.com">iDentalk</a> in ChengDu,China. I used to be a pythoner, I and my two teammates setup iDentalk which provided service between dentists & their patients .Now I try to make my way to the Design world gradually. I'm always having a big crush on design, especially the web front-end design.I will try my best to make my  works amazing enough.</p>
-                </div>
-            </div>
-        </div>
-        <div class="large-9 columns blog-content">
-            <h3>{{ page.title }}</h3>
-            {% if page.originalurl %}
-                <h4>Translated by {{ page.author }} &nbsp;&nbsp;|&nbsp;&nbsp; <a href="{{page.originalurl}}">ORIGINAL</a> <a id="switch" style="padding-left:400px;cursor:pointer;">switch language</a></h4>
-            {% else %}
-                <h4>Authored by {{ page.author }}</h4>
-                
-            {% endif %}
-            <audio id="player" src="http://sola-lufkin.github.io/blog/assets/music/paipai.mp3"></audio>
-		    {{ content }}
-        </div>
-    </div>
-</div>
-<div style="background-color:#3e3e3e; min-height:550px;">
-    <div class="flow-board row">
-        <!-- <div class="row">
-            <div class="border-green large-9 large-centered columns"></div>
-        </div> -->
-        <div class="row">
-            <div id="disqus_thread" class="disqus-content large-9 large-centered columns"></div>
-                <script type="text/javascript">
-                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                    var disqus_shortname = 'solair'; // required: replace example with your forum shortname
-                    /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<div class="container">
+  <div class="row pt70">
 
-                <!-- show the disqus comments number -->
-                <script type="text/javascript">
-                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                var disqus_shortname = 'solair'; // required: replace example with your forum shortname
-
-                /* * * DON'T EDIT BELOW THIS LINE * * */
-                (function () {
-                    var s = document.createElement('script'); s.async = true;
-                    s.type = 'text/javascript';
-                    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-                    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-                }());
-                </script>
+    <!-- Sidebar: Author Bio -->
+    <div class="large-3 columns">
+      <div class="bio-wrap">
+        <img class="avatar" src="{{ site.baseurl }}/assets/img/sola.jpg" alt="Sola Lufkin">
+        <div class="bio">
+          <h3>Sola Lufkin</h3>
+          <p class="darker">Product Designer, iDentalk</p>
+          <p class="hideMobile">Hey there, I'm a sola. I'm working at <a href="http://www.identalk.com">iDentalk</a> in ChengDu, China. I used to be a pythoner, I and my two teammates setup iDentalk which provided service between dentists &amp; their patients. Now I try to make my way to the Design world gradually. I'm always having a big crush on design, especially the web front-end design. I will try my best to make my works amazing enough.</p>
         </div>
+      </div>
     </div>
-    <div class="footer">
-       Sola Lufkin © 2012–2013
+
+    <!-- Main Content -->
+    <div class="large-9 columns blog-content">
+      <h3>{{ page.title }}</h3>
+
+      {% if page.originalurl %}
+        <h4>
+          Translated by {{ page.author }}
+          &nbsp;|&nbsp;
+          <a href="{{ page.originalurl }}">ORIGINAL</a>
+          <a id="switch" href="javascript:;">switch language</a>
+        </h4>
+      {% else %}
+        <h4>Authored by {{ page.author }}</h4>
+      {% endif %}
+
+      <!-- Audio for language-switch sound -->
+      <audio id="player" src="{{ site.baseurl }}/assets/music/paipai.mp3" preload="none"></audio>
+
+      <!-- Article body (lang-switch targets .blog-main-content) -->
+      {{ content }}
     </div>
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+<!-- Comments + footer section -->
+<div class="flow-board">
+  <div class="row">
+    <div class="large-9 large-centered columns disqus-content">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'solair';
+        (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </div>
 </div>
 
+<div class="footer">
+  Sola Lufkin &copy; 2012&ndash;2013
+</div>
 
+<!-- Image grayscale hover effect (preserved from original) -->
 <script type="text/javascript">
-    
-    // On window load. This waits until images have loaded which is essential
-    $(window).load(function(){
-        
-        // Fade in images so there isn't a color "pop" document load and then on window load
-        $(".post-img").fadeIn(500);
-        
-        // clone image
-        $('.post-img').each(function(){
-            var el = $(this);
-            el.css({"position":"absolute"}).wrap("<div class='img_wrapper' style='display: inline-block'>").clone().addClass('img_grayscale').css({"position":"absolute","z-index":"998","opacity":"0"}).insertBefore(el).queue(function(){
-                var el = $(this);
-                var W = parseFloat(this.width);
-                var H = parseFloat(this.height);
-                var re_w = parseFloat(this.style.width);
-                var re_h = re_w/W*H;
-                // el.parent().css({"width":this.width,"height":this.height});
-                el.parent().css({"width":this.style.width,"height":re_h});
-                el.dequeue();
-            });
-            this.src = grayscale(this.src);
-        });
-        
-        // Fade image 
-        $('.post-img').mouseover(function(){
-            $(this).parent().find('img:first').stop().animate({opacity:1}, 1000);
-        })
-        $('.img_grayscale').mouseout(function(){
-            $(this).stop().animate({opacity:0}, 1000);
-        });     
-    });
-    
-    // Grayscale w canvas method
-    function grayscale(src){
-        var canvas = document.createElement('canvas');
-        var ctx = canvas.getContext('2d');
-        var imgObj = new Image();
-        imgObj.src = src;
-        canvas.width = imgObj.width;
-        canvas.height = imgObj.height; 
-        ctx.drawImage(imgObj, 0, 0); 
-        var imgPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        for(var y = 0; y < imgPixels.height; y++){
-            for(var x = 0; x < imgPixels.width; x++){
-                var i = (y * 4) * imgPixels.width + x * 4;
-                var avg = (imgPixels.data[i] + imgPixels.data[i + 1] + imgPixels.data[i + 2]) / 3;
-                imgPixels.data[i] = avg; 
-                imgPixels.data[i + 1] = avg; 
-                imgPixels.data[i + 2] = avg;
-            }
-        }
-        ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
-        return canvas.toDataURL();
+$(window).load(function(){
+  $(".post-img").fadeIn(500);
+  $('.post-img').each(function(){
+    var el = $(this);
+    el.css({"position":"absolute"}).wrap("<div class='img_wrapper' style='display:inline-block'>")
+      .clone().addClass('img_grayscale')
+      .css({"position":"absolute","z-index":"998","opacity":"0"})
+      .insertBefore(el).queue(function(){
+        var el = $(this);
+        var W = parseFloat(this.width),  H = parseFloat(this.height);
+        var re_w = parseFloat(this.style.width), re_h = re_w / W * H;
+        el.parent().css({"width": this.style.width, "height": re_h});
+        el.dequeue();
+      });
+    this.src = grayscale(this.src);
+  });
+  $('.post-img').mouseover(function(){
+    $(this).parent().find('img:first').stop().animate({opacity:1}, 1000);
+  });
+  $('.img_grayscale').mouseout(function(){
+    $(this).stop().animate({opacity:0}, 1000);
+  });
+});
+
+function grayscale(src){
+  var canvas = document.createElement('canvas');
+  var ctx = canvas.getContext('2d');
+  var imgObj = new Image();
+  imgObj.src = src;
+  canvas.width = imgObj.width; canvas.height = imgObj.height;
+  ctx.drawImage(imgObj, 0, 0);
+  var imgPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  for(var y = 0; y < imgPixels.height; y++){
+    for(var x = 0; x < imgPixels.width; x++){
+      var i = (y * 4) * imgPixels.width + x * 4;
+      var avg = (imgPixels.data[i] + imgPixels.data[i+1] + imgPixels.data[i+2]) / 3;
+      imgPixels.data[i] = imgPixels.data[i+1] = imgPixels.data[i+2] = avg;
     }
-        
+  }
+  ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
+  return canvas.toDataURL();
+}
 </script>
-</div>

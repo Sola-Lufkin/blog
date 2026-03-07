@@ -1,55 +1,47 @@
 ---
 layout: default
-title: Less is more - sola's blog
+title: Less is more — sola's blog
 ---
-<div class="container row">
-<div class="large-8 large-offset-3 columns">
-    <!-- Content List -->
-    <div class="blog-list ml-15">
-        {% for post in site.posts %}
-        {% if  post.yearmonth != post.next.yearmonth %}
-    
-    	<div class="row list-data">
-            <div class="large-12 columns">
-                <div class="meta">
-                <h4 class="month"><strong>{{ post.date | date: "%b %Y" }}</strong></h4>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        <div class="row list-items">
-            <div class="large-1 columns">
 
+<div class="container">
+  <div class="blog-list">
 
-                {% comment %}
-                {% if post.category == 'life' %}
-                    <div class="category">life</div>
-                {% elsif post.category == 'design' %}
-                    <div class="category">design</div>
-                {% elsif post.category == 'programe' %}
-                    <div class="category">programe</div>
-                {% endif %}
-                {% endcomment %}
-
-                <div class="category">{{ post.date | date: "%d" }}</div>
-
-            </div>
-            <div class="large-11 columns list-title">
-                <a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a>
-                <ul class="author">
-                {% if post.originalurl %}
-                  <ul>Translated by {{ post.author }}</ul>
-                {% else %}
-                  <ul>Authored by {{ post.author }}</ul>                    
-                {% endif %}
-                </ul>
-            </div>
-        </div>
-        {% endfor %}
+    <!-- Terminal hero -->
+    <div class="blog-hero">
+      <div class="blog-hero-prompt">
+        <span class="prompt-sign">&gt;</span>
+        <span class="typewriter-text" data-text="SOLA LUFKIN // BLOG">SOLA LUFKIN // BLOG</span>
+        <span class="cb-cursor"></span>
+      </div>
+      <p class="blog-hero-sub">// designer · developer · pythoner → design world</p>
     </div>
-    <div class="blog-footer ml-15">
-        Sola Lufkin © 2012–2013 
+
+    <!-- Post list -->
+    {% for post in site.posts %}
+      {% if post.yearmonth != post.next.yearmonth %}
+      <div class="month-group cb-fade">
+        <span class="month-label">{{ post.date | date: "%b %Y" }}</span>
+      </div>
+      {% endif %}
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="post-card cb-fade" aria-label="{{ post.title }}">
+        <div class="post-card-day">{{ post.date | date: "%d" }}</div>
+        <div class="post-card-body">
+          <span class="post-card-title">{{ post.title }}</span>
+          <div class="post-card-meta">
+            {% if post.originalurl %}
+              <span class="post-tag">translated</span>{{ post.author }}
+            {% else %}
+              <span class="post-tag">{{ post.category | default: "post" }}</span>{{ post.author }}
+            {% endif %}
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+
+    <div class="blog-footer">
+      Sola Lufkin &copy; 2012&ndash;2013
     </div>
-    <!-- Content List -->
-</div> 
+
+  </div>
 </div>

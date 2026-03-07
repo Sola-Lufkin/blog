@@ -1,40 +1,70 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>{{ page.title }}</title>
-    
-    <link rel="Shortcut Icon" href="{{ site.baseurl }}/assets/img/favicon.ico" type="image/x-icon" />  
-    <link rel="Bookmark" href="{{ site.baseurl }}/assets/img/favicon.ico" type="image/x-icon" />  
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/normalize.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/foundation.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css"/>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/homepage.css"/>
-    <link href="{{ site.baseurl }}/assets/css/top.css" rel="stylesheet"  type="text/css"/>
-    {% if page.css %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.css }}"/>
-    {% endif %}
-    <script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2427101337" type="text/javascript" charset="utf-8"></script>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }}</title>
 
-    <script src="{{ site.baseurl }}/assets/js/vendor/custom.modernizr.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/zepto.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/jquery.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/foundation.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/jquery.tmpl.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/jquery.pin.min.js"></script>
-    {% if page.js %}   
-    <script src="{{ site.baseurl }}/assets/js/{{ page.js }}"></script>
-    {% endif %}
-		
-	</head>
-	<body>
-        <a id="returnTop" href="javascript:;">Top</a> 
-        <script src="{{ site.baseurl }}/assets/js/top.js" type="text/javascript"></script>
-        {% include header.html %}
-            {{ content }}	               			      
-        <!-- <div class="footer">
-        </div> -->
-	</body>
+  <link rel="Shortcut Icon" href="{{ site.baseurl }}/assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="Bookmark"     href="{{ site.baseurl }}/assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Base CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/foundation.css">
+
+  <!-- Legacy CSS (kept for grid, overridden visually by cyberpunk.css) -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css"/>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/homepage.css"/>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/top.css"/>
+
+  <!-- Cyberpunk Design System — loaded last to override everything -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/cyberpunk.css"/>
+
+  {% if page.css %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.css }}"/>
+  {% endif %}
+
+  <!-- Scripts -->
+  <script src="{{ site.baseurl }}/assets/js/vendor/jquery.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/foundation.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/jquery.tmpl.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/jquery.pin.min.js"></script>
+
+  {% if page.js %}
+  <script src="{{ site.baseurl }}/assets/js/{{ page.js }}"></script>
+  {% endif %}
+</head>
+<body>
+
+  <!-- Reading progress bar (desktop) -->
+  <div id="reading-progress"></div>
+
+  <!-- Return to top -->
+  <a id="returnTop" href="javascript:;">Top</a>
+  <script src="{{ site.baseurl }}/assets/js/top.js" type="text/javascript"></script>
+
+  <!-- Navigation -->
+  {% include header.html %}
+
+  <!-- Page content -->
+  {{ content }}
+
+  <!-- Mobile reading bar (shown only on mobile via CSS) -->
+  <div id="mobile-bar">
+    <span id="mobile-bar-pct">0%</span>
+    <div id="mobile-bar-track">
+      <div id="mobile-bar-fill"></div>
+    </div>
+    <span id="mobile-bar-top">↑ TOP</span>
+  </div>
+
+  <!-- Mobile FX & reading progress JS -->
+  <script src="{{ site.baseurl }}/assets/js/mobile-fx.js"></script>
+
+</body>
 </html>
