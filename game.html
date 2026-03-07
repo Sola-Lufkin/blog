@@ -1,36 +1,68 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>test</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="./assets/css/game.css">
-		<script type="text/javascript" src="./assets/js/vendor/jquery.js"></script>
-		<script type="text/javascript" src="./assets/js/game.js"></script>
-	</head>
-	<body>
-		<div id="game">
-			<div id="gameUI">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Space Bowling — Sola Lufkin</title>
 
-				<div id="gameIntro">
-					<h1>Space bowling</h1>
-					<p>This is an awesome game.</p>
-					<p><a href=" " id="gamePlay" class="button">Play</a></p>
-				</div>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 
-				<div id="gameStats">
-					<p>Asteroids: <span id="gameRemaining"></span></p>
-					<p>Clicks: <span class="gameScore"></span></p>
-					<p><a href=" " class="gameReset">Reset</a></p>
-				</div>
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/cyberpunk.css">
 
-				<div id="gameComplete">
-					<h1>You win!</h1>
-					<p>Congratulations, you completed the game in <span class="gameScore"></span> clicks.</p>
-					<p><a href=" " class="gameReset button">Play again</a></p>
-				</div>
+  <!-- Game CSS overrides -->
+  <style>
+    body { background: var(--bg); overflow-x: hidden; }
+    canvas { background: #050510; }
+  </style>
 
-			</div>
-			<canvas id="gameCanvas" width="350" height="600"></canvas>
-		</div>
-	</body>
-<html>
+  <script type="text/javascript" src="./assets/js/vendor/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/game.js"></script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="podcast-nav">
+    <a href="./index.html">&gt;_ SOLA.LUFKIN</a>
+  </nav>
+
+  <div id="game-wrap">
+
+    <div id="game-header">
+      <h1>// SPACE BOWLING</h1>
+      <p>$ click asteroids to destroy them. good luck.</p>
+    </div>
+
+    <div id="game">
+      <div id="gameUI">
+        <div id="gameIntro">
+          <h1>READY?</h1>
+          <p>Destroy all the asteroids.</p>
+          <p><a href=" " id="gamePlay" class="button">[▶] Play</a></p>
+        </div>
+
+        <div id="gameStats">
+          <p>Asteroids: <span id="gameRemaining"></span></p>
+          <p>Clicks: <span class="gameScore"></span></p>
+          <p><a href=" " class="gameReset">[↺] Reset</a></p>
+        </div>
+
+        <div id="gameComplete">
+          <h1>YOU WIN!</h1>
+          <p>Completed in <span class="gameScore"></span> clicks.</p>
+          <p><a href=" " class="gameReset button">[▶] Play again</a></p>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="350" height="600"></canvas>
+    </div>
+
+  </div><!-- /#game-wrap -->
+
+  <script src="./assets/js/mobile-fx.js"></script>
+
+</body>
+</html>
