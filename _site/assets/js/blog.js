@@ -1,27 +1,19 @@
-$(document).ready(
-    function()
-    {
+$(document).ready(function() {
 
-		// $(".bio-wrap").pin()
-		$('#switch').click(function() {
-			// var a = $('#english').attr('display');
-			// alert(a);		
-			// if ( a == 'none'){
+  $('#switch').click(function() {
+    // Ignore rapid clicks while animation is running
+    if ($(".blog-main-content").is(":animated")) return;
 
-			// 	$('#english').fadeToggle('slow', 'linear');
-			// 	$('#chinese').fadeToggle('slow', 'linear');
-			// }
-			// else {
-			// 	// $('#chinese').fadeToggle('slow', 'linear');
-			//  //    $('#english').fadeToggle('slow', 'linear');
-			// }
-			  
-			// });
-			document.getElementById('player').play();
-	        $(".blog-main-content:visible").fadeOut("normal");
-	        $(".blog-main-content:hidden").fadeIn("slow");
+    // Play sound effect (safe: ignore browser autoplay restrictions)
+    var player = document.getElementById('player');
+    if (player) {
+      var p = player.play();
+      if (p && p.catch) p.catch(function() {});
+    }
 
-    		});
+    // Toggle: fade out visible, fade in hidden
+    $(".blog-main-content:visible").fadeOut("normal");
+    $(".blog-main-content:hidden").fadeIn("slow");
+  });
 
-    }
-);
+});

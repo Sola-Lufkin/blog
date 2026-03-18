@@ -22,11 +22,16 @@ js: blog.js
     <div class="large-9 columns blog-content">
       <h3>{{ page.title }}</h3>
 
-      {% if page.originalurl %}
+      {% if page.originalurl or page.bilingual %}
         <h4>
-          Translated by {{ page.author }}
-          &nbsp;|&nbsp;
-          <a href="{{ page.originalurl }}">ORIGINAL</a>
+          {% if page.originalurl %}
+            Translated by {{ page.author }}
+            &nbsp;|&nbsp;
+            <a href="{{ page.originalurl }}">ORIGINAL</a>
+          {% else %}
+            Authored by {{ page.author }}
+            &nbsp;|&nbsp;
+          {% endif %}
           <a id="switch" href="javascript:;">switch language</a>
         </h4>
       {% else %}
