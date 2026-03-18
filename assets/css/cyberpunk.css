@@ -527,7 +527,10 @@ a.link:hover { color: var(--green) !important; }
   transition: border-color var(--t), box-shadow var(--t) !important;
 }
 .post-img:hover { border-color: var(--green) !important; box-shadow: 0 0 22px var(--green-glow) !important; }
-.img_wrapper { display: block !important; position: relative !important; margin: 1.5rem 0 !important; }
+.img_wrapper { display: block !important; position: relative !important; margin: 1.5rem 0 !important; max-width: 100% !important; }
+
+/* Responsive images inside blog posts */
+.blog-main-content img, .blog-content img { max-width: 100% !important; height: auto !important; }
 
 /* --- 10. Sidebar / Bio ------------------------------------- */
 .bio-wrap {
@@ -729,6 +732,10 @@ div[style*="background-color: #3e3e3e"] {
 
   pre { font-size: 0.78rem !important; }
   .post-card-title { white-space: normal !important; }
+
+  /* Fix image overflow on mobile: reset JS-injected fixed widths */
+  .img_wrapper { width: 100% !important; height: auto !important; overflow: hidden !important; }
+  .img_wrapper img { width: 100% !important; height: auto !important; position: relative !important; }
 
   /* Show mobile bar */
   #mobile-bar { display: flex; }
