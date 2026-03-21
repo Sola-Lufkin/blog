@@ -73,7 +73,7 @@
         <div class="large-9 columns blog-content">
             <h3>Twelve Time Management Habits</h3>
             
-                <h4>Translated by Sola &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://www.forbes.com/sites/patbrans/2013/01/01/twelve-time-management-habits-to-master-in-2013/">ORIGINAL</a> <a id="switch" href="javascript:;">switch language</a></h4>
+                <h4>Translated by Sola &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://www.forbes.com/sites/patbrans/2013/01/01/twelve-time-management-habits-to-master-in-2013/">ORIGINAL</a> <a id="switch" href="javascript:void(0);" onclick="langSwitch(); return false;">switch language</a></h4>
             
             <audio id="player" src="http://sola-lufkin.github.io/blog/assets/music/paipai.mp3"></audio>
 		    <div id="english" class="blog-main-content" style="display:block;">
@@ -254,6 +254,23 @@
         });     
     });
     
+
+    // Language switch
+    function langSwitch() {
+      var cn = document.getElementById('chinese');
+      var en = document.getElementById('english');
+      if (!cn || !en) return;
+      var player = document.getElementById('player');
+      if (player) { try { player.play(); } catch(e) {} }
+      if (cn.style.display === 'none') {
+        cn.style.display = 'block';
+        en.style.display = 'none';
+      } else {
+        cn.style.display = 'none';
+        en.style.display = 'block';
+      }
+    }
+
     // Grayscale w canvas method
     function grayscale(src){
         var canvas = document.createElement('canvas');
