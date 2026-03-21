@@ -97,20 +97,14 @@ $(window).load(function(){
   });
 });
 
-// Language switch — uses onclick on #switch; bypasses jQuery event binding timing
+// Language switch — called via onclick on #switch (reliable cross-browser).
+// Uses jQuery fade for smooth animation; animation guard prevents rapid-click glitches.
 function langSwitch() {
-  var cn = document.getElementById('chinese');
-  var en = document.getElementById('english');
-  if (!cn || !en) return;
+  if ($(".blog-main-content").is(":animated")) return;
   var player = document.getElementById('player');
   if (player) { try { player.play(); } catch(e) {} }
-  if (cn.style.display === 'none') {
-    cn.style.display = 'block';
-    en.style.display = 'none';
-  } else {
-    cn.style.display = 'none';
-    en.style.display = 'block';
-  }
+  $(".blog-main-content:visible").fadeOut("normal");
+  $(".blog-main-content:hidden").fadeIn("slow");
 }
 
 function grayscale(src){

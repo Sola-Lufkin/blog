@@ -307,20 +307,13 @@
     });
     
 
-    // Language switch
+    // Language switch — called via onclick (reliable cross-browser); jQuery fade for smooth animation
     function langSwitch() {
-      var cn = document.getElementById('chinese');
-      var en = document.getElementById('english');
-      if (!cn || !en) return;
+      if ($(".blog-main-content").is(":animated")) return;
       var player = document.getElementById('player');
       if (player) { try { player.play(); } catch(e) {} }
-      if (cn.style.display === 'none') {
-        cn.style.display = 'block';
-        en.style.display = 'none';
-      } else {
-        cn.style.display = 'none';
-        en.style.display = 'block';
-      }
+      $(".blog-main-content:visible").fadeOut("normal");
+      $(".blog-main-content:hidden").fadeIn("slow");
     }
 
     // Grayscale w canvas method
