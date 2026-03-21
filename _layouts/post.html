@@ -32,7 +32,7 @@ js: blog.js
             Authored by {{ page.author }}
             &nbsp;|&nbsp;
           {% endif %}
-          <a id="switch" href="javascript:;">switch language</a>
+          <a id="switch" href="javascript:void(0);" onclick="langSwitch(); return false;">switch language</a>
         </h4>
       {% else %}
         <h4>Authored by {{ page.author }}</h4>
@@ -96,6 +96,16 @@ $(window).load(function(){
     $(this).stop().animate({opacity:0}, 1000);
   });
 });
+
+// Language switch — called via onclick on #switch (reliable cross-browser).
+// Uses jQuery fade for smooth animation; animation guard prevents rapid-click glitches.
+function langSwitch() {
+  if ($(".blog-main-content").is(":animated")) return;
+  var player = document.getElementById('player');
+  if (player) { try { player.play(); } catch(e) {} }
+  $(".blog-main-content:visible").fadeOut("normal");
+  $(".blog-main-content:hidden").fadeIn("slow");
+}
 
 function grayscale(src){
   var canvas = document.createElement('canvas');
